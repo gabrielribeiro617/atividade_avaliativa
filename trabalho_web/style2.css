@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #222;
+  color: white;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #111, #444);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 1.5em;
+}
+
+/* Menu hamburguer */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu div {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+/* Layout principal */
+main {
+  flex: 1;
+  display: flex;
+}
+
+/* Poster */
+.poster {
+  flex: 1;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Conteúdo à direita */
+.conteudo {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(to right, #222, #555);
+}
+
+.conteudo h2 {
+  margin-bottom: 5px;
+  font-size: 1.4em;
+}
+
+.conteudo p {
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  color: #eee;
+}
+
+/* Categorias */
+.categorias {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+.categorias span {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  color: #fff;
+  background: #aaa;
+}
+.categorias .ativo {
+  background: red;
+  font-weight: bold;
+}
+
+/* Tabela */
+.tabela {
+  background: linear-gradient(to right, #ff5f6d, #ff9966);
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid black;
+  height: 40px;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.8em;
+}

@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(to bottom, #000, #111);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.image-section {
+    background-image: url('/cinema.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    
+    height: 100vh;
+    flex: 1;
+    display: flex;
+
+    mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+}
+
+.content-section {
+    border-radius: 0;
+    background: linear-gradient(to right, #0a0a0a, #111);
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.content-section h2 {
+    color: rgb(70, 159, 194);
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content-section p {
+    margin-left: 15px;
+}
+
+nav {
+    padding: 7px 10px 10px 10px;
+}
+
+.tag {
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: rgb(70, 159, 194);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tag:hover {
+    background-color: white;
+    box-shadow: 0px 0px 5px gray;
+    color: rgb(70, 159, 194);
+}
+
+div#container {
+    background-color: #111;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 10px black;
+    padding: 5px 30px 40px 30px;
+    margin: 0px 25px 10px 15px;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+
+li:hover {
+    box-shadow: inset 0px 0px 5px black;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #111;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.959);
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .image-section, .content-section {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+    div#container {
+        margin-top: 15px;
+        width: 100%;
+    }
+}

@@ -47,7 +47,7 @@ a {
 }
 
 .image-section {
-    background-image: url('/trabalho_web/cinema.jpeg');
+    background-image: url('./cinema.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   

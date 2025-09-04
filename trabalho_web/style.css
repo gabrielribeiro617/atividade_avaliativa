@@ -56,6 +56,10 @@ a {
     flex: 1;
     display: flex;
 
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+
     mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
     mask-repeat: no-repeat;
     mask-size: cover;

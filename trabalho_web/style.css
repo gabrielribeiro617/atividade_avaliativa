@@ -107,14 +107,15 @@ nav {
     font-size: 1.2rem;
     font-weight: bold;
     background: var(--color-primary);
-    transition: 0.3s ease;
+    box-shadow: inset 0px 2px 7px rgb(20, 45, 54);
+    transition: 0.5s ease;
 }
 
 .tag:hover,
 .tag:focus {
     background: var(--color-white);
     color: var(--color-primary);
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 8px gray;
 }
 
 #container {

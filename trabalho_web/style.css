@@ -87,6 +87,7 @@ a {
     color: rgb(70, 159, 194);
     font-size: 1.9rem;
     font-weight: bold;
+    text-shadow: 0px 5px 15px black;
     margin-bottom: 5px;
 }
 

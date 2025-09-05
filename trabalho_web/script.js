@@ -35,12 +35,26 @@ const combosTable = `
   </div>
 `;
 
+let activeContent = null;
+
+function toggleContent(content, button) {
+  if (activeContent === content) {
+    container.innerHTML = '';
+    activeContent = null;
+    button.blur(); 
+  } else {
+    container.innerHTML = content;
+    activeContent = content;
+    button.focus(); 
+  }
+}
+
 produtosBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  container.innerHTML = produtosTable;
+  toggleContent(produtosTable, produtosBtn);
 });
 
 combosBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  container.innerHTML = combosTable;
+  toggleContent(combosTable, combosBtn);
 });

@@ -12,7 +12,7 @@ const produtosTable = `
       <tr><td>Pipoca P Salgada</td><td>R$ 10,00</td></tr>
       <tr><td>Pipoca M Salgada</td><td>R$ 15,00</td></tr>
       <tr><td>Pipoca G Salgada</td><td>R$ 20,00</td></tr>
-      <tr><td>Água com e sem gás 500ml</td><td>R$  8,00</td></tr>
+      <tr><td>Água com e sem gás 500ml</td><td>R$ 8,00</td></tr>
       <tr><td>Refrigerante</td><td>R$ 10,00</td></tr>
       <tr><td>Pão de Queijo</td><td>R$ 18,00</td></tr>
       <tr><td>Pipoca P Doce</td><td>R$ 12,00</td></tr>

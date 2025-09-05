@@ -26,7 +26,7 @@ const produtosTable = `
 const combosTable = `
   <div>
     <h3>Combos Disponíveis</h3>
-    <p>Confira os combos disponíveis pessoalmente no nosso cinema. Abaixo seguem algumas sugestões:</p>
+    <p>Confira os combos disponíveis pessoalmente no nosso cinema. Abaixo seguem algumas sugestões:<hr></p>
     <ul>
       <li>Combo Pipocas: 2 Pipoca P Salgada e 1 Pipoca M Doce</li>
       <li>Combo para Dividir: 4 Pipocas M Salgada, 4 Pipocas Doce M e 4 Refrigerantes</li>

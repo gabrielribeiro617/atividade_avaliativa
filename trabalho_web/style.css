@@ -87,7 +87,7 @@ a {
     margin-left: 15px;
 }
 
-.par2 {
+.container p {
     text-align: center;
 }
 
@@ -102,7 +102,7 @@ nav {
     font-size: 1.2rem;
     font-weight: bold;
     background: rgb(70, 159, 194);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .tag:hover {
@@ -143,6 +143,7 @@ li {
 li:hover {
     box-shadow: inset 0px 0px 5px black;
     transform: scale(1.05);
+    font-weight: bold;
 }
 
 table {
